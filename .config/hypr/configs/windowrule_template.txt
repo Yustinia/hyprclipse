@@ -1,0 +1,45 @@
+# ============================================
+# FLOATING WINDOW RULES - EXAMPLES
+# ============================================
+
+# --- Basic Float ---
+# Format: windowrulev2 = float, class:^(exact-class-name)$
+windowrulev2 = float, class:^(pavucontrol)$
+windowrulev2 = float, title:^(Picture-in-Picture)$
+
+# --- Float + Size ---
+# Format: size WIDTH HEIGHT (in pixels)
+windowrulev2 = float, class:^(blueman-manager)$
+windowrulev2 = size 600 500, class:^(blueman-manager)$
+
+# --- Float + Size + Center ---
+# Format: center (no parameters needed)
+windowrulev2 = float, class:^(org.gnome.Calculator)$
+windowrulev2 = size 400 600, class:^(org.gnome.Calculator)$
+windowrulev2 = center, class:^(org.gnome.Calculator)$
+
+# --- Float + Size + Position ---
+# Format: move X Y (pixels from top-left)
+# Use 100%-WIDTH for right edge, 100%-HEIGHT for bottom edge
+windowrulev2 = float, class:^(kitty-float)$
+windowrulev2 = size 800 600, class:^(kitty-float)$
+windowrulev2 = move 100 100, class:^(kitty-float)$
+
+# --- Float + Size + Pin (always on top) ---
+# Format: pin (stays on top, visible on all workspaces)
+windowrulev2 = float, title:^(Picture-in-Picture)$
+windowrulev2 = size 400 225, title:^(Picture-in-Picture)$
+windowrulev2 = pin, title:^(Picture-in-Picture)$
+
+# --- Float + Opacity ---
+# Format: opacity ACTIVE INACTIVE (0.0 to 1.0)
+windowrulev2 = float, class:^(rofi)$
+windowrulev2 = opacity 0.9 0.7, class:^(rofi)$
+
+# --- Match Multiple Conditions (AND) ---
+# Format: Comma-separated conditions (ALL must match)
+windowrulev2 = float, class:^(thunar)$, title:^(File Operation Progress)$
+
+# --- Match Multiple Apps (OR - separate rules) ---
+# Format: Use regex pipe | to match ANY of the classes
+windowrulev2 = float, class:^(pavucontrol|blueman-manager|nm-connection-editor)$
