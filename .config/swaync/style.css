@@ -398,8 +398,8 @@ notificationwindow, blankwindow, blankwindow {
 
 /* Mpris widget */
 :root {
-  --mpris-album-art-overlay: rgba(0, 0, 0, 0.55);
-  --mpris-button-hover: rgba(0, 0, 0, 0.5);
+  --mpris-album-art-overlay: rgba(16, 16, 16, 0.7);
+  --mpris-button-hover: rgba(16, 16, 16, 1.0);
   --mpris-album-art-icon-size: 96px;
   --mpris-album-art-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
 }
