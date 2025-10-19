@@ -14,7 +14,7 @@
     background:                  @black;
     background-color:            transparent;
     foreground:                  @white;
-    border-color:                @white;
+    border-color:                transparent;
     separatorcolor:              @gray20;
 
     /* Normal state */
