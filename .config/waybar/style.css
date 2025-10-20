@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: SF Pro Display;
+    font-family: SF Pro Display, SF Mono;
     font-size: 1.05rem;
     margin: 0.2rem;
 }
