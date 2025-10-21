@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: SF Pro Display, SF Mono;
+    font-family: SF Pro Display, SF Mono, Noto Sans CJK HK, Noto Sans CJK JP, Noto Sans CJK KR, Noto Sans CJK SC, Noto Sans CJK TC, Noto Sans Mono CJK HK, Noto Sans Mono CJK JP, Noto Sans Mono CJK KR, Noto Sans Mono CJK SC, Noto Sans Mono CJK TC;
     font-size: 1.05rem;
     margin: 0.2rem;
 }
@@ -195,8 +195,8 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #FB4934;
-    color: #e8e8e8;
+    background-color: transparent;
+    color: #FB4934;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
