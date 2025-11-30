@@ -188,8 +188,8 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: #e8e8e8;
-        color: #101010;
+        background-color: transparent;
+        color: #e8e8e8;
     }
 }
 
