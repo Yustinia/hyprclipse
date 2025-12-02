@@ -4,11 +4,11 @@
 }
 
 window {
-	background-color: rgba(16, 16, 16, 0.7);
+	background-color: rgba(16, 16, 16, 0.8);
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 7px;
     border-color: transparent;
 	text-decoration-color: #e8e8e8;
     color: #e8e8e8;

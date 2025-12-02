@@ -47,7 +47,7 @@ window {
     y-offset: calc(70% - 176px);
     width: 600;
     background-color: @black;
-    border-radius: 16px;
+    border-radius: 14px;
 }
 
 mainbox {
@@ -59,8 +59,8 @@ inputbar {
     background-color: @black;
     border-color: @gray20;
     border: 2px;
-    border-radius: 8px;
-    padding: 16px 8px;
+    border-radius: 7px;
+    padding: 16px 0px;
     margin: 5px 0px;
 }
 
@@ -85,7 +85,7 @@ listview {
 element {
     padding: 5px 20px;
     margin: 2px 2px;
-    border-radius: 8px;
+    border-radius: 7px;
     background-color: @black; /* added for unselected state */
 }
 
