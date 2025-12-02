@@ -2,11 +2,11 @@
   --cc-bg: transparent;
   --noti-border-color: rgba(232, 232, 232, 1.0);
   --noti-bg: 16, 16, 16;
-  --noti-bg-proper: rgba(16, 16, 16, 1.0);
-  --noti-bg-alpha: 1.0;
-  --noti-bg-darker: rgba(16, 16, 16, 1.0);
+  --noti-bg-proper: rgba(16, 16, 16, 0.7);
+  --noti-bg-alpha: 0.7;
+  --noti-bg-darker: rgba(16, 16, 16, 0.7);
   --noti-bg-hover: rgba(16, 16, 16, 1.0);
-  --noti-bg-focus: rgba(16, 16, 16, 1.0);
+  --noti-bg-focus: rgba(16, 16, 16, 0.7);
   --noti-close-bg: transparent;
   --noti-close-bg-hover: transparent;
   --text-color: rgba(232, 232, 232, 1.0);

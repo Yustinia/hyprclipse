@@ -112,8 +112,9 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%I:%M%p}",
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip-format": "{calendar}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -210,7 +211,7 @@
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "shutdown",
+            "shutdown": "shutdown",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"

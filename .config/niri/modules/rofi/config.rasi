@@ -4,39 +4,39 @@
     /* Theme settings */
     highlight: bold italic;
 
-    /* MONOCHROME GRADIENT PALETTE */
+    /* MONOCHROME GRADIENT PALETTE - FULLY OPAQUE */
     white:             #e8e8e8; /* brightest */
-    gray20:            #383838b3;
-    gray10:            #202020b3;
-    black:             #101010b3; /* darkest */
+    gray20:            #383838; /* removed b3 alpha */
+    gray10:            #202020; /* removed b3 alpha */
+    black:             #101010; /* removed b3 alpha - darkest */
 
     /* Base theme colors */
     background:                  @black;
-    background-color:            transparent;
+    background-color:            @black; /* changed from transparent */
     foreground:                  @white;
-    border-color:                transparent;
+    border-color:                @gray20; /* changed from transparent */
     separatorcolor:              @gray20;
 
     /* Normal state */
-    normal-background:           transparent;
+    normal-background:           @black; /* changed from transparent */
     normal-foreground:           @white;
-    alternate-normal-background: transparent;
+    alternate-normal-background: @black; /* changed from transparent */
     alternate-normal-foreground: @white;
     selected-normal-background:  @gray10;
     selected-normal-foreground:  @white;
 
     /* Active state */
-    active-background:           transparent;
+    active-background:           @black; /* changed from transparent */
     active-foreground:           @white;
-    alternate-active-background: transparent;
+    alternate-active-background: @black; /* changed from transparent */
     alternate-active-foreground: @white;
     selected-active-background:  @gray10;
     selected-active-foreground:  @white;
 
     /* Urgent state */
-    urgent-background:           transparent;
+    urgent-background:           @black; /* changed from transparent */
     urgent-foreground:           @white;
-    alternate-urgent-background: transparent;
+    alternate-urgent-background: @black; /* changed from transparent */
     alternate-urgent-foreground: @white;
     selected-urgent-background:  @gray10;
     selected-urgent-foreground:  @white;
@@ -52,6 +52,7 @@ window {
 
 mainbox {
     padding: 15px;
+    background-color: @black; /* added for consistency */
 }
 
 inputbar {
@@ -65,18 +66,17 @@ inputbar {
 
 prompt {
     text-color: @white;
-    background-color: transparent;
+    background-color: @black; /* changed from transparent */
 }
 
 entry {
     placeholder: "  Welcome";
     placeholder-color: @gray20;
-    background-color: transparent;
-    background: transparent;
+    background-color: @black; /* changed from transparent */
 }
 
 listview {
-    background-color: transparent;
+    background-color: @black; /* changed from transparent */
     lines: 9;
     columns: 2;
     fixed-height: true;
@@ -86,10 +86,11 @@ element {
     padding: 5px 20px;
     margin: 2px 2px;
     border-radius: 8px;
+    background-color: @black; /* added for unselected state */
 }
 
 #scrollbar {
     border: 0;
-    handle-color: transparent;
+    handle-color: @gray20; /* changed from transparent */
     padding: 0;
 }
