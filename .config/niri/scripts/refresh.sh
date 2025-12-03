@@ -14,5 +14,5 @@ done
 sleep 0.2
 
 waybar -c "$MODULES_DIR/waybar/config.jsonc" -s "$MODULES_DIR/waybar/style.css" &
-swaync -c "$MODULES_DIR/swaync/config.jsonc" -s "$MODULES_DIR/swaync/style.css" &
+swaync -c "$MODULES_DIR/swaync/config.json" -s "$MODULES_DIR/swaync/style.css" &
 swww-daemon &

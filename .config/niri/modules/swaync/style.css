@@ -1,6 +1,6 @@
 :root {
   --cc-bg: transparent;
-  --noti-border-color: rgba(232, 232, 232, 1.0);
+  --noti-border-color: rgba(56, 56, 56, 1.0);
   --noti-bg: 16, 16, 16;
   --noti-bg-proper: rgba(16, 16, 16, 1.0);
   --noti-bg-alpha: 1.0;
@@ -15,7 +15,7 @@
   --notification-icon-size: 64px;
   --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
   --notification-group-icon-size: 32px;
-  --border: 0px solid var(--noti-border-color);
+  --border: 1px solid var(--noti-border-color);
   --border-radius: 7px;
   --notification-shadow: 0 0 0 0px rgba(0, 0, 0, 0),
   --font-size-body: 15px;
@@ -356,6 +356,7 @@ notificationwindow, blankwindow, blankwindow {
 .widgets > .widget {
   background-color: var(--noti-bg-proper);
   background: var(--noti-bg-proper);
+  border: var(--border);
 }
 
 .widget {
